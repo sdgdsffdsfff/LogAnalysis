@@ -1,0 +1,933 @@
+2014-05-18 12:51:29,076 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	System.out.println("then branch")	println 
+2014-05-18 12:51:29,077 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	LOG.error( "something bad happen!")	error 
+2014-05-18 12:51:29,077 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	System.out.println("just do something before exit")	println 
+2014-05-18 12:51:29,208 [    133]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in compare2Strings.  
+2014-05-18 12:53:23,442 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	System.out.println("then branch")	println 
+2014-05-18 12:53:23,489 [     47]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	LOG.error( "something bad happen!")	error 
+2014-05-18 12:53:23,490 [     48]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	System.out.println("just do something before exit")	println 
+2014-05-18 12:53:23,512 [     70]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 12:53:24,968 [   1526]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 12:53:24,971 [   1529]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 12:53:24,971 [   1529]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 12:55:32,175 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	System.out.println("then branch")	println 
+2014-05-18 12:55:32,177 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	LOG.error( "something bad happen!")	error 
+2014-05-18 12:55:32,178 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorStatement	System.out.println("just do something before exit")	println 
+2014-05-18 12:55:32,202 [     27]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 12:55:33,547 [   1372]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 12:55:33,550 [   1375]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 12:55:33,551 [   1376]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:16:40,775 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:16:40,807 [     32]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!")	error 
+2014-05-18 15:16:40,808 [     33]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:16:40,941 [    166]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:16:40,974 [    199]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:16:40,976 [    201]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:16:40,977 [    202]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:16:40,977 [    202]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:19:03,045 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:19:03,179 [    134]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!")	error 
+2014-05-18 15:19:03,179 [    134]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:19:03,234 [    189]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:19:03,278 [    233]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:19:03,281 [    236]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:19:03,281 [    236]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:19:03,281 [    236]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:20:44,112 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:20:44,119 [      7]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!")	error 
+2014-05-18 15:20:44,122 [     10]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:20:44,153 [     41]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:20:44,190 [     78]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:20:44,193 [     81]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:20:44,194 [     82]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:20:44,194 [     82]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:22:31,616 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:22:31,638 [     22]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!")	error 
+2014-05-18 15:22:31,639 [     23]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:22:31,679 [     63]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:24:20,312 [ 108696]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:24:28,381 [ 116765]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:24:28,384 [ 116768]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:24:35,795 [ 124179]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:25:49,414 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:25:49,417 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!")	error 
+2014-05-18 15:25:49,417 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:25:49,442 [     28]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:25:49,509 [     95]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:25:49,512 [     98]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:25:49,512 [     98]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:25:49,513 [     99]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:25:50,612 [   1198]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:25:50,613 [   1199]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:25:50,613 [   1199]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:25:50,613 [   1199]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:32:13,531 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:32:13,533 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!")	error 
+2014-05-18 15:32:13,535 [      4]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:32:13,556 [     25]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:32:13,596 [     65]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:32:13,598 [     67]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:32:13,598 [     67]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:32:13,598 [     67]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:32:13,811 [    280]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:32:13,811 [    280]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:32:13,811 [    280]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:32:13,811 [    280]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:41:39,188 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:41:39,196 [      8]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!")	error 
+2014-05-18 15:41:39,196 [      8]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:41:39,248 [     60]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:41:39,281 [     93]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:41:39,289 [    101]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:41:39,289 [    101]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:41:39,289 [    101]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:41:39,579 [    391]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:41:39,580 [    392]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:41:39,580 [    392]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:41:39,580 [    392]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:43:54,460 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:43:54,472 [     12]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!")	error 
+2014-05-18 15:43:54,472 [     12]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:43:54,500 [     40]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:43:54,521 [     61]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:43:54,524 [     64]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:43:54,524 [     64]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:43:54,524 [     64]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:43:55,582 [   1122]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:43:55,583 [   1123]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:43:55,583 [   1123]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:43:55,583 [   1123]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:45:12,153 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:45:12,154 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!"+a)	error 
+2014-05-18 15:45:12,154 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:45:12,216 [     63]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:45:12,313 [    160]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:45:12,323 [    170]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:45:12,323 [    170]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:45:12,324 [    171]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:45:13,488 [   1335]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:45:13,488 [   1335]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:45:13,488 [   1335]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:45:13,488 [   1335]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:46:25,209 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:46:25,213 [      4]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!"+a)	error 
+2014-05-18 15:46:25,213 [      4]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:46:25,240 [     31]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:51:47,198 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:51:47,199 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!"+a)	error 
+2014-05-18 15:51:47,200 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:51:47,244 [     46]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 15:51:47,280 [     82]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:51:47,283 [     85]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:51:47,283 [     85]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:51:47,284 [     86]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:51:48,008 [    810]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 15:51:48,009 [    811]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 15:51:48,009 [    811]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 15:51:48,009 [    811]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 15:53:34,615 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 15:53:34,622 [      7]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!" + a)	error 
+2014-05-18 15:53:34,622 [      7]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 15:53:34,681 [     66]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:03:53,670 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:03:53,708 [     38]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!" + a)	error 
+2014-05-18 16:03:53,709 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:03:53,734 [     64]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:03:53,821 [    151]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:03:53,824 [    154]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:03:53,824 [    154]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:03:53,824 [    154]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:03:54,702 [   1032]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:03:54,703 [   1033]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:03:54,703 [   1033]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:03:54,703 [   1033]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:05:15,836 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:05:15,838 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!" + a)	error 
+2014-05-18 16:05:15,838 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:05:15,865 [     29]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:05:15,923 [     87]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:05:15,938 [    102]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:05:15,938 [    102]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:05:15,938 [    102]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:05:16,727 [    891]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:05:16,728 [    892]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:05:16,728 [    892]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:05:16,728 [    892]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:06:06,370 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:06:06,371 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error( "something bad happen!" + a)	error 
+2014-05-18 16:06:06,371 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:06:06,399 [     29]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:06:06,522 [    152]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:06:06,524 [    154]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:06:06,524 [    154]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:06:06,524 [    154]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:06:07,542 [   1172]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:06:07,543 [   1173]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:06:07,543 [   1173]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:06:07,543 [   1173]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:08:20,672 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:08:20,685 [     13]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!" + a)	error 
+2014-05-18 16:08:20,685 [     13]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:08:20,706 [     34]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:08:20,731 [     59]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:08:20,733 [     61]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:08:20,733 [     61]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:08:20,734 [     62]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:08:24,210 [   3538]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:08:24,212 [   3540]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:08:24,212 [   3540]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:08:24,213 [   3541]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:47:16,726 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:47:16,728 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!" + a)	error 
+2014-05-18 16:47:16,728 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:47:16,745 [     19]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:50:20,831 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:50:20,835 [      4]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!" + a)	error 
+2014-05-18 16:50:20,836 [      5]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:50:20,941 [    110]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:50:21,035 [    204]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:50:21,041 [    210]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:50:21,041 [    210]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:50:21,041 [    210]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:50:22,647 [   1816]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:50:22,648 [   1817]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:50:22,648 [   1817]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:50:22,648 [   1817]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:52:19,483 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:52:19,486 [      4]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!" + a)	error 
+2014-05-18 16:52:19,486 [      4]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:52:19,541 [     59]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:52:19,596 [    114]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:52:19,602 [    120]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:52:19,602 [    120]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:52:52,999 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:52:53,001 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 16:52:53,001 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:52:53,018 [     19]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:52:53,127 [    128]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:52:53,129 [    130]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:52:53,129 [    130]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:52:53,946 [    947]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:52:53,947 [    948]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:52:53,947 [    948]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:53:46,336 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:53:46,339 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 16:53:46,339 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:53:46,357 [     21]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:53:46,382 [     46]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:53:46,385 [     49]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:53:46,385 [     49]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:53:46,385 [     49]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:53:46,646 [    310]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:53:46,646 [    310]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:53:46,646 [    310]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:53:46,646 [    310]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:55:39,919 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:55:39,922 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 16:55:39,923 [      4]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:55:39,985 [     66]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:55:40,038 [    119]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:55:40,041 [    122]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:55:40,042 [    123]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:55:40,042 [    123]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:55:40,970 [   1051]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:55:40,971 [   1052]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 16:55:40,971 [   1052]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:55:40,971 [   1052]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:56:11,192 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 16:56:11,194 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 16:56:11,194 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 16:56:11,236 [     44]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 16:56:11,267 [     75]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:56:11,270 [     78]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:56:11,270 [     78]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 16:56:12,683 [   1491]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 16:56:12,684 [   1492]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 16:56:12,684 [   1492]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 17:02:08,553 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 17:02:08,567 [     14]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 17:02:08,567 [     14]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 17:02:08,594 [     41]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 17:02:08,644 [     91]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 17:02:08,646 [     93]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 17:02:08,646 [     93]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 17:02:08,646 [     93]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 17:02:09,915 [   1362]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 17:02:09,917 [   1364]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 17:02:09,917 [   1364]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 17:02:09,917 [   1364]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 17:12:46,262 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 17:12:46,300 [     38]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 17:12:46,300 [     38]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 17:12:46,430 [    168]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 17:12:46,461 [    199]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 17:12:46,463 [    201]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 17:12:46,464 [    202]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 17:12:46,464 [    202]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 17:12:47,431 [   1169]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 17:12:47,432 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 17:12:47,432 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 17:12:47,432 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 17:12:47,550 [   1288]  DEBUG -  #com.hust.software.MyQuickFix - MyQuickFix.applyFix by add	 dp, a. 
+2014-05-18 18:42:35,962 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 18:42:35,998 [     36]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 18:42:36,000 [     38]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 18:42:36,020 [     58]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 18:42:36,055 [     93]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 18:42:36,057 [     95]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 18:42:36,057 [     95]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 18:42:36,057 [     95]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 18:42:37,169 [   1207]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 18:42:37,170 [   1208]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 18:42:37,170 [   1208]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 18:42:37,170 [   1208]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 18:46:03,742 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 18:46:03,743 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 18:46:03,743 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 18:46:03,895 [    154]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 18:46:03,928 [    187]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 18:46:03,929 [    188]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 18:46:03,930 [    189]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 18:46:03,930 [    189]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 18:46:04,793 [   1052]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 18:46:04,794 [   1053]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 18:46:04,794 [   1053]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 18:46:04,794 [   1053]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 18:46:04,910 [   1169]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp, a  
+2014-05-18 19:37:11,282 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-18 19:37:11,344 [     62]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-18 19:37:11,346 [     64]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-18 19:37:11,371 [     89]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-18 19:37:11,428 [    146]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 19:37:11,431 [    149]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 19:37:11,432 [    150]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 19:37:11,433 [    151]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 19:37:12,443 [   1161]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-18 19:37:12,443 [   1161]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-18 19:37:12,443 [   1161]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-18 19:37:12,443 [   1161]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-18 19:37:12,581 [   1299]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp, a  
+2014-05-19 09:52:27,618 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-19 09:52:27,621 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 09:52:27,621 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-19 09:52:27,710 [     92]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 09:52:27,865 [    247]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 09:52:27,868 [    250]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 09:52:27,868 [    250]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-19 09:52:27,868 [    250]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 09:52:27,869 [    251]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 09:52:29,582 [   1964]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 09:52:29,583 [   1965]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 09:52:29,583 [   1965]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-19 09:52:29,583 [   1965]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 09:52:29,762 [   2144]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp, a  
+2014-05-19 10:02:47,485 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("then branch")	println 
+2014-05-19 10:02:47,509 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 10:02:47,510 [     25]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("just do something before exit")	println 
+2014-05-19 10:02:47,604 [    119]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 10:02:47,628 [    143]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 10:02:47,630 [    145]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 10:02:47,631 [    146]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-19 10:02:47,631 [    146]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 10:02:47,631 [    146]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 10:02:47,863 [    378]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 10:02:47,863 [    378]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 10:02:47,863 [    378]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:a 
+2014-05-19 10:02:47,863 [    378]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 10:02:47,992 [    507]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp, a  
+2014-05-19 10:20:16,677 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 10:20:16,679 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 10:20:16,679 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 10:20:16,786 [    109]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 10:20:16,822 [    145]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 10:20:16,830 [    153]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 10:20:16,831 [    154]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 10:20:16,831 [    154]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 10:20:18,243 [   1566]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 10:20:18,244 [   1567]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 10:20:18,244 [   1567]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 10:20:18,356 [   1679]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 11:11:39,730 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 11:11:39,732 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 11:11:39,732 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 11:11:39,757 [     27]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 11:11:39,792 [     62]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 11:11:39,794 [     64]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 11:11:39,794 [     64]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 11:11:39,794 [     64]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 11:11:40,090 [    360]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 11:11:40,090 [    360]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 11:11:40,090 [    360]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 11:11:40,216 [    486]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 12:04:34,521 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 12:04:34,578 [     57]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 12:04:34,578 [     57]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 12:04:34,630 [    109]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 12:04:34,683 [    162]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 12:04:34,686 [    165]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 12:04:34,686 [    165]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 12:04:34,686 [    165]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 12:04:35,100 [    579]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 12:04:35,100 [    579]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 12:04:35,100 [    579]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 12:04:35,263 [    742]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 12:09:19,417 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 12:09:19,420 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 12:09:19,421 [      4]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 12:09:19,446 [     29]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 12:09:19,483 [     66]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 12:09:19,485 [     68]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 12:09:19,486 [     69]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 12:09:19,486 [     69]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 12:09:19,736 [    319]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 12:09:19,737 [    320]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 12:09:19,737 [    320]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 12:09:19,880 [    463]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 12:09:59,744 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 12:09:59,746 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 12:09:59,746 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 12:09:59,770 [     26]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 12:09:59,837 [     93]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 12:09:59,839 [     95]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 12:09:59,839 [     95]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-19 12:49:55,798 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 12:49:55,801 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 12:49:55,803 [      5]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 12:49:55,838 [     40]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 12:49:55,876 [     78]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 12:49:55,878 [     80]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 12:49:55,878 [     80]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 12:49:55,878 [     80]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 12:49:56,183 [    385]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 12:49:56,183 [    385]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 12:49:56,183 [    385]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 12:49:56,315 [    517]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 14:03:04,653 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 14:03:04,679 [     26]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 14:03:04,680 [     27]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 14:03:04,771 [    118]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 14:03:04,814 [    161]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:03:04,816 [    163]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:03:04,816 [    163]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:03:04,816 [    163]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 14:03:05,457 [    804]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:03:05,457 [    804]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:03:05,457 [    804]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:03:05,610 [    957]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 14:07:32,946 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 14:07:32,947 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 14:07:32,949 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 14:07:32,972 [     26]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 14:07:33,008 [     62]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:07:33,012 [     66]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:07:33,012 [     66]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:07:33,012 [     66]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 14:07:33,260 [    314]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:07:33,260 [    314]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:07:33,260 [    314]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:07:33,401 [    455]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 14:09:11,984 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 14:09:11,985 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 14:09:11,985 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 14:09:12,007 [     23]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 14:09:12,084 [    100]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:09:12,086 [    102]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:09:12,087 [    103]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:09:12,087 [    103]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 14:09:12,440 [    456]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:09:12,441 [    457]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:09:12,441 [    457]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:09:12,577 [    593]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 14:10:40,013 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 14:10:40,016 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 14:10:40,016 [      3]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 14:10:40,040 [     27]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 14:10:40,120 [    107]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:10:40,123 [    110]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:10:40,123 [    110]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:10:40,123 [    110]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 14:10:41,424 [   1411]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:10:41,425 [   1412]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:10:41,425 [   1412]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:10:41,567 [   1554]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 14:16:47,759 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 14:16:47,761 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 14:16:47,761 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 14:16:47,798 [     39]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 14:16:47,834 [     75]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:16:47,837 [     78]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:16:47,837 [     78]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:16:47,838 [     79]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 14:16:48,977 [   1218]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:16:48,978 [   1219]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:16:48,978 [   1219]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:16:49,116 [   1357]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-19 14:17:44,116 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-19 14:17:44,118 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-19 14:17:44,118 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-19 14:17:44,138 [     22]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-19 14:17:44,198 [     82]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:17:44,201 [     85]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:17:44,201 [     85]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:17:44,201 [     85]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-19 14:17:44,446 [    330]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-19 14:17:44,446 [    330]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-19 14:17:44,446 [    330]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-19 14:17:44,555 [    439]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-20 09:34:21,424 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 09:34:21,452 [     28]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 09:34:21,452 [     28]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 09:34:21,498 [     74]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-20 09:34:21,523 [     99]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 09:34:21,528 [    104]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 09:34:21,528 [    104]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 09:34:21,528 [    104]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-20 09:34:23,367 [   1943]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 09:34:23,368 [   1944]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 09:34:23,368 [   1944]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 09:37:51,025 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 09:37:51,027 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 09:37:51,027 [      2]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 09:37:51,043 [     18]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-20 09:37:51,071 [     46]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 09:37:51,074 [     49]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 09:37:51,074 [     49]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 09:37:51,075 [     50]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-20 09:37:51,325 [    300]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 09:37:51,325 [    300]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 09:37:51,325 [    300]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 09:41:32,756 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 09:41:32,774 [     18]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 09:41:32,774 [     18]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 09:41:32,806 [     50]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-20 09:41:32,856 [    100]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 09:41:32,859 [    103]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 09:41:32,859 [    103]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 09:41:32,859 [    103]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-20 09:41:33,100 [    344]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 09:41:33,103 [    347]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 09:41:33,103 [    347]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 09:58:00,535 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 09:58:00,585 [     50]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 09:58:00,586 [     51]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 09:58:00,642 [    107]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-20 09:58:00,676 [    141]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 09:58:00,678 [    143]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 09:58:00,678 [    143]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 09:58:00,679 [    144]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-20 09:58:02,271 [   1736]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 09:58:02,272 [   1737]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 09:58:02,272 [   1737]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 09:58:02,433 [   1898]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-20 10:00:44,892 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 10:00:44,893 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 10:00:44,893 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 10:00:45,056 [    164]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in compare2Strings.  
+2014-05-20 10:00:45,083 [    191]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 10:00:45,085 [    193]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 10:00:45,086 [    194]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 10:00:45,086 [    194]  DEBUG - software.LogAnalysisInspection - log error call with fault found in compare2Strings.  
+2014-05-20 10:00:46,251 [   1359]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 10:00:46,251 [   1359]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 10:00:46,251 [   1359]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 10:00:46,431 [   1539]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-20 10:59:02,168 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 10:59:02,206 [     38]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 10:59:02,206 [     38]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 10:59:02,213 [     45]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 10:59:02,213 [     45]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 10:59:02,213 [     45]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!"+"\tdp=" + dp)	error 
+2014-05-20 10:59:02,213 [     45]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 10:59:02,216 [     48]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 10:59:02,238 [     70]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 10:59:02,242 [     74]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 10:59:02,242 [     74]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 10:59:02,243 [     75]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 10:59:02,243 [     75]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 11:00:02,578 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:00:02,598 [     20]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:00:02,598 [     20]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:00:02,602 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:00:02,602 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:00:02,602 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:00:02,602 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:00:02,604 [     26]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:00:02,685 [    107]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:00:02,689 [    111]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:00:02,689 [    111]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:00:02,689 [    111]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:00:02,689 [    111]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 11:00:06,643 [   4065]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:00:06,644 [   4066]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:00:06,644 [   4066]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:00:06,644 [   4066]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:00:08,094 [   5516]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 length, con  
+2014-05-20 11:08:56,848 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:08:56,877 [     29]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:08:56,878 [     30]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:08:56,883 [     35]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:08:56,883 [     35]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:08:56,884 [     36]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:08:56,884 [     36]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:08:56,887 [     39]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:15:12,417 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:15:12,457 [     40]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:15:12,458 [     41]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:15:12,467 [     50]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:15:12,467 [     50]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:15:12,467 [     50]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:15:12,467 [     50]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:15:12,469 [     52]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:15:12,477 [     60]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:filename.equals 
+2014-05-20 11:15:12,477 [     60]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:filename 
+2014-05-20 11:15:12,477 [     60]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:isDir 
+2014-05-20 11:15:12,527 [    110]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:15:12,527 [    110]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:15:12,532 [    115]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:15:12,535 [    118]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:15:12,535 [    118]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:15:12,535 [    118]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:15:12,535 [    118]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 11:15:12,682 [    265]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:filename.equals 
+2014-05-20 11:15:12,683 [    266]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:filename 
+2014-05-20 11:15:12,683 [    266]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:isDir 
+2014-05-20 11:15:12,693 [    276]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:15:12,693 [    276]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:15:12,693 [    276]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:15:12,693 [    276]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:15:12,693 [    276]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:15:12,694 [    277]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:15:13,062 [    645]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 length, con  
+2014-05-20 11:16:35,873 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:16:35,919 [     46]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:16:35,919 [     46]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:16:35,920 [     47]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:16:35,920 [     47]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:16:35,921 [     48]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:16:35,921 [     48]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:16:35,921 [     48]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:16:35,941 [     68]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:filename.equals 
+2014-05-20 11:16:35,942 [     69]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:filename 
+2014-05-20 11:16:35,942 [     69]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:isDir 
+2014-05-20 11:19:22,882 [ 167009]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:19:22,882 [ 167009]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:25:14,551 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:25:14,566 [     15]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:25:14,567 [     16]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:25:14,567 [     16]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:25:14,567 [     16]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:25:14,568 [     17]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:25:14,568 [     17]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:25:14,568 [     17]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:25:14,610 [     59]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:25:14,615 [     64]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:25:14,615 [     64]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:25:14,615 [     64]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:25:14,615 [     64]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 11:25:14,822 [    271]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:25:14,823 [    272]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:25:14,823 [    272]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:25:14,823 [    272]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:25:14,979 [    428]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 length, con  
+2014-05-20 11:26:36,482 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:26:36,497 [     15]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:26:36,497 [     15]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:26:36,498 [     16]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:26:36,498 [     16]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:26:36,498 [     16]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:26:36,498 [     16]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:26:36,499 [     17]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:26:36,544 [     62]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:26:36,564 [     82]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:26:36,564 [     82]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:26:36,564 [     82]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 11:26:36,564 [     82]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:26:36,564 [     82]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 11:26:36,865 [    383]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:26:36,865 [    383]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:26:36,865 [    383]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:26:36,865 [    383]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 11:26:36,865 [    383]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:26:37,064 [    582]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 length, con, dp  
+2014-05-20 11:27:51,841 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:27:51,906 [     65]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:27:51,906 [     65]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:27:51,915 [     74]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:27:51,915 [     74]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:27:51,915 [     74]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:27:51,915 [     74]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:27:51,916 [     75]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:27:51,998 [    157]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:27:52,001 [    160]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:27:52,001 [    160]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:27:52,001 [    160]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 11:27:52,001 [    160]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:27:52,001 [    160]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 11:27:52,176 [    335]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:27:52,177 [    336]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:27:52,177 [    336]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:27:52,177 [    336]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 11:27:52,177 [    336]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:27:52,390 [    549]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 length, con, dp  
+2014-05-20 11:46:04,834 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:46:04,860 [     26]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:46:04,860 [     26]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:46:04,861 [     27]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:46:04,862 [     28]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:46:04,862 [     28]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:46:04,862 [     28]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:46:04,864 [     30]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:49:05,821 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:49:05,843 [     22]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:49:05,843 [     22]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:49:05,848 [     27]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:49:05,848 [     27]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:49:05,848 [     27]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:49:05,848 [     27]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:49:05,851 [     30]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 11:49:05,916 [     95]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:49:05,919 [     98]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:49:05,919 [     98]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:49:05,919 [     98]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 11:49:05,919 [     98]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:49:05,919 [     98]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 11:49:06,380 [    559]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 11:49:06,381 [    560]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 11:49:06,381 [    560]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 11:49:06,381 [    560]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 11:49:06,381 [    560]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 11:49:06,528 [    707]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-20 11:51:14,751 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 11:51:14,772 [     21]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 11:51:14,772 [     21]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 11:51:14,775 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 11:51:14,775 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 11:51:14,775 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 11:51:14,775 [     24]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 11:51:14,776 [     25]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:02:20,751 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:02:20,839 [     88]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:02:20,840 [     89]  DEBUG - software.LogAnalysisInspection - no  
+2014-05-20 12:02:20,844 [     93]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:02:20,844 [     93]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:02:20,844 [     93]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 12:02:20,844 [     93]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:02:20,846 [     95]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:05:59,986 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:06:00,048 [     62]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:06:00,049 [     63]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 12:06:00,052 [     66]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:06:00,052 [     66]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:06:00,052 [     66]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 12:06:00,052 [     66]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:06:00,053 [     67]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:06:00,120 [    134]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:06:00,121 [    135]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:PsiType:String 
+2014-05-20 12:06:00,121 [    135]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:PsiType:boolean 
+2014-05-20 12:06:00,129 [    143]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:06:00,131 [    145]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:06:00,131 [    145]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:06:00,132 [    146]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:06:00,132 [    146]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:06:00,132 [    146]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 12:06:00,896 [    910]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:06:00,896 [    910]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:PsiType:String 
+2014-05-20 12:06:00,897 [    911]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:PsiType:boolean 
+2014-05-20 12:06:00,897 [    911]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:06:00,897 [    911]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:06:00,897 [    911]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:06:00,897 [    911]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:06:00,897 [    911]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:06:01,019 [   1033]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-20 12:11:54,436 [      1]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:11:54,497 [     62]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:11:54,497 [     62]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 12:11:54,499 [     64]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:11:54,499 [     64]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:11:54,499 [     64]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 12:11:54,499 [     64]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:11:54,500 [     65]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:11:54,531 [     96]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:11:54,532 [     97]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:11:54,532 [     97]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:11:54,535 [    100]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:11:54,537 [    102]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:11:54,537 [    102]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:11:54,537 [    102]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:11:54,537 [    102]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:11:54,537 [    102]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 12:11:54,790 [    355]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:11:54,791 [    356]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:11:54,791 [    356]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:11:54,791 [    356]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:11:54,791 [    356]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:11:54,791 [    356]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:11:54,791 [    356]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:11:54,791 [    356]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:11:54,908 [    473]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-20 12:13:26,425 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:13:26,457 [     32]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:13:26,458 [     33]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 12:13:26,464 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:13:26,464 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:13:26,464 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 12:13:26,464 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:13:26,467 [     42]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:13:26,525 [    100]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:13:26,525 [    100]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:13:26,525 [    100]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:13:26,527 [    102]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:13:26,529 [    104]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:13:26,529 [    104]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:13:26,529 [    104]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:13:26,529 [    104]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:13:26,530 [    105]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 12:13:26,668 [    243]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:13:26,669 [    244]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:13:26,669 [    244]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:13:26,669 [    244]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:13:26,669 [    244]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:13:26,669 [    244]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:13:26,669 [    244]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:13:26,669 [    244]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:13:26,846 [    421]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 dp  
+2014-05-20 12:15:00,400 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:15:00,441 [     41]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:15:00,441 [     41]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 12:15:00,444 [     44]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:15:00,444 [     44]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:15:00,444 [     44]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 12:15:00,444 [     44]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:15:00,449 [     49]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:15:00,505 [    105]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:15:00,506 [    106]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:15:00,506 [    106]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:15:00,517 [    117]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:15:00,519 [    119]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:15:00,519 [    119]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:15:00,520 [    120]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:15:00,520 [    120]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:15:00,520 [    120]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 12:15:00,726 [    326]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:15:00,727 [    327]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:15:00,728 [    328]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:15:00,728 [    328]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:15:00,728 [    328]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:15:00,728 [    328]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:15:00,728 [    328]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:15:00,728 [    328]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:15:00,889 [    489]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 con, dp  
+2014-05-20 12:15:43,188 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:15:43,208 [     20]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:15:43,208 [     20]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 12:15:43,213 [     25]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:15:43,213 [     25]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:15:43,213 [     25]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 12:15:43,213 [     25]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:15:43,215 [     27]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:15:43,310 [    122]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:15:43,311 [    123]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:15:43,311 [    123]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:15:43,314 [    126]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:15:43,316 [    128]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:15:43,317 [    129]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:15:43,317 [    129]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:15:43,317 [    129]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:15:43,317 [    129]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 12:15:44,357 [   1169]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:15:44,358 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:15:44,358 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:15:44,358 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:15:44,358 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:15:44,358 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:15:44,358 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:15:44,358 [   1170]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:15:44,498 [   1310]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 con, dp  
+2014-05-20 12:23:02,055 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:23:02,088 [     33]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:23:02,089 [     34]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 12:23:02,094 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:23:02,094 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:23:02,094 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 12:23:02,094 [     39]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:23:02,096 [     41]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:23:02,170 [    115]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:23:02,170 [    115]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:23:02,171 [    116]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:23:02,175 [    120]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:23:02,177 [    122]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:23:02,177 [    122]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:23:02,177 [    122]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:23:02,177 [    122]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:23:02,177 [    122]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 12:23:03,576 [   1521]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:23:03,577 [   1522]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:23:03,577 [   1522]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:23:03,578 [   1523]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:23:03,578 [   1523]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:23:03,578 [   1523]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:23:03,578 [   1523]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:23:03,578 [   1523]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:23:03,726 [   1671]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 con, dp  
+2014-05-20 12:32:12,526 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:32:12,591 [     65]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:32:12,592 [     66]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 12:32:12,597 [     71]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:32:12,597 [     71]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:32:12,597 [     71]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!"+"\tcon.length=")	error 
+2014-05-20 12:32:12,597 [     71]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:32:12,599 [     73]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:32:12,634 [    108]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:32:12,634 [    108]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:32:12,634 [    108]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:32:12,636 [    110]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:32:12,640 [    114]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:32:12,640 [    114]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:32:12,640 [    114]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:32:12,640 [    114]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:32:12,640 [    114]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 12:33:01,690 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 12:33:01,765 [     75]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 12:33:01,765 [     75]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 12:33:01,772 [     82]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 12:33:01,772 [     82]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 12:33:01,772 [     82]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 12:33:01,772 [     82]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 12:33:01,775 [     85]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 12:33:01,798 [    108]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:33:01,799 [    109]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:33:01,799 [    109]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:33:01,801 [    111]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:33:01,803 [    113]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:33:01,803 [    113]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:33:01,803 [    113]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:33:01,803 [    113]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:33:01,803 [    113]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 12:33:02,097 [    407]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con.length	ref type:null 
+2014-05-20 12:33:02,101 [    411]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:con	ref type:String 
+2014-05-20 12:33:02,101 [    411]  DEBUG - .hust.software.LogAnalysisUtil - filed: PsiReferenceExpression:dp	ref type:boolean 
+2014-05-20 12:33:02,102 [    412]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 12:33:02,102 [    412]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 12:33:02,102 [    412]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 12:33:02,102 [    412]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 12:33:02,102 [    412]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 12:33:02,251 [    561]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 con, dp  
+2014-05-20 14:26:28,811 [      0]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	removeEntry("file.txt", false)	removeEntry 
+2014-05-20 14:26:28,895 [     84]   INFO - .hust.software.LogAnalysisUtil - Log error method call not found in main.  
+2014-05-20 14:26:28,895 [     84]  DEBUG - software.LogAnalysisInspection - no log error call with fault found in main.  
+2014-05-20 14:26:28,900 [     89]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	con.length()	length 
+2014-05-20 14:26:28,900 [     89]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	filename.equals("file.txt")	equals 
+2014-05-20 14:26:28,900 [     89]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	LOG.error("something bad happen!")	error 
+2014-05-20 14:26:28,900 [     89]  DEBUG - .hust.software.LogAnalysisUtil - findLogErrorMethodCall	System.out.println("normal exit")	println 
+2014-05-20 14:26:28,902 [     91]   INFO - .hust.software.LogAnalysisUtil - Log error method call found in removeEntry.  
+2014-05-20 14:26:28,927 [    116]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 14:26:28,929 [    118]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 14:26:28,929 [    118]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 14:26:28,929 [    118]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 14:26:28,930 [    119]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 14:26:28,930 [    119]  DEBUG - software.LogAnalysisInspection - log error call with fault found in removeEntry.  
+2014-05-20 14:26:30,364 [   1553]  DEBUG - .hust.software.LogAnalysisUtil - ### start ### 
+2014-05-20 14:26:30,365 [   1554]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con.length 
+2014-05-20 14:26:30,365 [   1554]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:con 
+2014-05-20 14:26:30,365 [   1554]  DEBUG - .hust.software.LogAnalysisUtil - PsiReferenceExpression:dp 
+2014-05-20 14:26:30,365 [   1554]  DEBUG - .hust.software.LogAnalysisUtil - ### end ### 
+2014-05-20 14:26:30,517 [   1706]  DEBUG -  #com.hust.software.MyQuickFix - applyFix by add	 con, dp  

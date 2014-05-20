@@ -1,0 +1,53 @@
+<idea-plugin version="2">
+  <id>com.hust.software.logAnalysis.dev</id>
+  <name>Log Analysis</name>
+  <version>1.4</version>
+  <vendor email="yuyan2do@gmail.com" url="http://www.yourcompany.com">Hust Software</vendor>
+
+  <description><![CDATA[
+      Enhance log by add variables to log error point, which can benefit manual or auto diagnose.<br>
+      <em>
+        <time>18-05-2014</time>
+        <author>Yan Yu</author>
+      </em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add i18n support.<br>
+      <em>
+        <time>19-05-2014</time>
+        <author>Yan Yu</author>
+      </em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- Resource bundle from which the text of plugin descriptions, action names and etc. will be loaded -->
+  <resource-bundle>logAnalysis</resource-bundle>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+      <inspectionToolProvider implementation="com.hust.software.LogAnalysisProvider"/>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
