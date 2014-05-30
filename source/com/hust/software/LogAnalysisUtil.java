@@ -1,8 +1,10 @@
 package com.hust.software;
 
+import com.hust.software.controlFlow.DigraphInstructionVisitor;
+import com.hust.software.controlFlow.GraphUtil;
 import com.intellij.codeInsight.highlighting.HighlightManager;
 import com.intellij.codeInspection.dataFlow.StandardDataFlowRunner;
-import com.intellij.codeInspection.dataFlow.StandardInstructionVisitor;
+import com.intellij.codeInspection.dataFlow.instructions.*;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.editor.Editor;
@@ -14,7 +16,6 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.StatusBar;
 import com.intellij.openapi.wm.WindowManager;
 import com.intellij.psi.*;
-import com.intellij.psi.controlFlow.*;
 import com.intellij.psi.search.searches.ReferencesSearch;
 import com.intellij.psi.util.PsiTreeUtil;
 import com.intellij.psi.util.TypeConversionUtil;
@@ -27,7 +28,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * A tool to help analyse code for log enhance.
@@ -40,16 +40,103 @@ public class LogAnalysisUtil {
 
 
     public static PsiMethodCallExpression findLogWithFault(PsiMethod method) {
+        controlFlow(method);
         PsiMethodCallExpression logErrorCall = findLogErrorMethodCall(method);
         if (logErrorCall == null || !checkLogFault(method, logErrorCall)) {
             return null;
         }
-        highlightMethodCaller(method);
+
+//        highlightMethodCaller(method);
         return logErrorCall;
     }
 
     private static boolean checkLogFault(PsiMethod method, PsiMethodCallExpression logErrorCall) {
         return !findVariablesNeedAdd(method, logErrorCall).isEmpty();
+    }
+
+    private static boolean nonBranchOrGotoInstruction(Instruction instruction) {
+        return !(instruction instanceof BranchingInstruction
+                || instruction instanceof GotoInstruction);
+    }
+
+    public static boolean controlFlow(PsiMethod method) {
+        if (method.getBody() == null) {
+            return false;
+        }
+
+        GraphUtil<Instruction> graphUtil = new GraphUtil<>();
+        StandardDataFlowRunner standardDataFlowRunner = new StandardDataFlowRunner(method.getBody());
+        DigraphInstructionVisitor myVisitor = new DigraphInstructionVisitor(graphUtil);
+        standardDataFlowRunner.analyzeMethod(method.getBody(), myVisitor);
+
+        Instruction[] instructions = standardDataFlowRunner.getInstructions();
+        for (int i = 0; i < instructions.length - 1; i++) {
+            Instruction current = instructions[i];
+            if (nonBranchOrGotoInstruction(current)) {
+                if (current instanceof MethodCallInstruction) {
+                    PsiCallExpression callExpression = ((MethodCallInstruction) current).getCallExpression();
+                    if (callExpression instanceof PsiMethodCallExpression) {
+                        PsiMethodCallExpression methodCallExpression = ((PsiMethodCallExpression) callExpression);
+                        if (LogAnalysisInspection.CHECKED_LOG_ERROR_Method.equals(methodCallExpression.getMethodExpression().getReferenceName())) {
+                            graphUtil.setReached(current);
+                        }
+                    }
+                }
+                graphUtil.addEdge(current, instructions[i + 1]);
+            } else if (current instanceof GotoInstruction) {
+                GotoInstruction gotoInstruction = ((GotoInstruction) current);
+                graphUtil.addEdge(current, instructions[gotoInstruction.getOffset()]);
+            }
+        }
+
+        List<PsiElement> mustRunCollect = graphUtil.getArticulationNodesMap().keySet()
+                .stream()
+                .map(ins -> dataFlowInstruction2PsiElement(ins))
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+        List<PsiElement> mayRunCollect = graphUtil.getRedundantNodesMap().keySet()
+                .stream()
+                .map(LogAnalysisUtil::dataFlowInstruction2PsiElement)
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+        highlightElement(mustRunCollect, JBColor.green);
+        highlightElement(mayRunCollect, JBColor.yellow);
+
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("### Instruction Choose ###");
+
+            mustRunCollect.stream()
+                    .map(Object::toString)
+                    .forEach(LOG::debug);
+            LOG.debug("------------");
+            mayRunCollect.stream()
+                    .map(Object::toString)
+                    .forEach(LOG::debug);
+            graphUtil.nodesMap.values()
+                    .stream()
+                    .filter(node -> (node.allPred.size() == 0 || node.allSucc.size() == 0))
+                    .forEach(problemNode -> {
+//                        LOG.debug(problemNode.getValue().toString());
+                    });
+
+            myVisitor.getGraphUtil().nodesMap.values()
+                    .stream()
+                    .forEach(raw -> {
+                        GraphUtil<Instruction>.Node<Instruction> node = ((GraphUtil<Instruction>.Node<Instruction>) raw);
+                        PsiElement element;
+                        if ((element = dataFlowInstruction2PsiElement(node.getValue())) != null) {
+//                            LOG.debug(element.getText() + "\t" + node.allSucc.size());
+//                            node.allSucc.stream()
+//                                    .filter(allSuccNode -> dataFlowInstruction2PsiElement(allSuccNode.getValue()) != null)
+//                                    .map(succNode -> dataFlowInstruction2PsiElement(succNode.getValue()))
+//                                    .forEach(succEle -> LOG.debug("\t" + succEle.getText()));
+                        }
+
+                    });
+            LOG.debug("### end Instruction Choose ###");
+        }
+
+        return true;
     }
 
     private static PsiMethodCallExpression findLogErrorMethodCall(PsiMethod method) {
@@ -62,43 +149,12 @@ public class LogAnalysisUtil {
 
         List<PsiMethodCallExpression> logErrorCalls = PsiTreeUtil.findChildrenOfType(method, PsiMethodCallExpression.class)
                 .stream()
-                .filter(methodCall -> LogAnalysisInspection.CHECKED_LOG_ERROR_Method.equals(methodCall.getMethodExpression()
-                        .getReferenceName()))
+                .filter(methodCall -> LogAnalysisInspection.CHECKED_LOG_ERROR_Method
+                        .equals(methodCall.getMethodExpression().getReferenceName()))
                 .collect(Collectors.toList());
         if (logErrorCalls.isEmpty()) {
             LOG.info("Log error method call not found in " + method.getName() + ". ");
             return null;
-        }
-//        while(true);
-        // todo these code is just for test
-        if (LOG.isDebugEnabled()) {
-            LOG.debug("### Instruction ###");
-            try {
-                ControlFlow controlFlow = ControlFlowFactory.getInstance(method.getProject())
-                        .getControlFlow(method.getBody(), LocalsOrMyInstanceFieldsControlFlowPolicy.getInstance(), true, true);
-                ControlFlowUtil.findCodeFragment(method);
-                controlFlow.getInstructions()
-                        .stream()
-                        .forEach((com.intellij.psi.controlFlow.Instruction ins) -> LOG.debug(ins.toString()));
-            } catch (AnalysisCanceledException e) {
-                e.printStackTrace();
-            }
-            LOG.debug("### end Instruction ###");
-
-//            new ControlFlowBuilder().build(dataFlowRunner, method.getBody());
-
-            LOG.debug("### Instruction2 ###");
-            StandardDataFlowRunner standardDataFlowRunner = new StandardDataFlowRunner(method.getBody());
-            standardDataFlowRunner.analyzeMethod(method.getBody(), new StandardInstructionVisitor());
-            com.intellij.codeInspection.dataFlow.instructions.Instruction[] instructions
-                    = standardDataFlowRunner.getInstructions();
-//            DfaValueFactory dfaValueFactory = standardDataFlowRunner.getFactory();
-//            Pair<Set<Instruction>, Set<Instruction>> constConditionalExpressions
-//                    = standardDataFlowRunner.getConstConditionalExpressions();
-
-            Stream.of(instructions)
-                    .forEach(instruction -> LOG.debug(instruction.getIndex() + "\t" + instruction.toString()));
-            LOG.debug("### end Instruction2 ###");
         }
 
         LOG.info("Log error method call found in " + method.getName() + ". ");
@@ -115,7 +171,7 @@ public class LogAnalysisUtil {
                 .stream()
                 .map(ref ->
                         PsiTreeUtil.getParentOfType(ref.getElement(), PsiMethodCallExpression.class))
-                .collect(Collectors.toList()));
+                .collect(Collectors.toList()), JBColor.green);
 
         if (LOG.isDebugEnabled()) {
             LOG.debug("### method call relationship ###");
@@ -222,12 +278,12 @@ public class LogAnalysisUtil {
             refExpHaveAffectList.stream().map(Object::toString).forEach(LOG::debug);
             LOG.debug("### end ###");
         }
-        highlightElement(refExpNeedAddList.stream().map(PsiReference::getElement).collect(Collectors.toList()));
+//        highlightElement(refExpNeedAddList.stream().map(PsiReference::getElement).collect(Collectors.toList()));
 
         return refExpNeedAddList;
     }
 
-    private static void highlightElement(@NotNull List<PsiElement> elementList) {
+    private static void highlightElement(@NotNull List<PsiElement> elementList, Color backgroundColor) {
         if (elementList.size() == 0) {
             return;
         }
@@ -252,7 +308,7 @@ public class LogAnalysisUtil {
                         EditorColors.SEARCH_RESULT_ATTRIBUTES);
                         */
                             final TextAttributes textattributes =
-                                    new TextAttributes(null, JBColor.GREEN, null, EffectType.LINE_UNDERSCORE, Font.PLAIN);
+                                    new TextAttributes(null, backgroundColor, null, EffectType.LINE_UNDERSCORE, Font.PLAIN);
 
 
                             if (editor != null) {
@@ -288,5 +344,32 @@ public class LogAnalysisUtil {
                 });
 
         return thenHas || elseHas;
+    }
+
+    private static PsiElement dataFlowInstruction2PsiElement
+            (com.intellij.codeInspection.dataFlow.instructions.Instruction instruction) {
+        if (instruction instanceof AssignInstruction) {
+            PsiExpression rExpression = ((AssignInstruction) instruction).getRExpression();
+            if (rExpression == null) {
+                return null;
+            }
+            return rExpression.getParent() == null ? rExpression : rExpression.getParent();
+        } else if (instruction instanceof BranchingInstruction) {
+            return ((BranchingInstruction) instruction).getPsiAnchor();
+
+        } else if (instruction instanceof CheckReturnValueInstruction) {
+            return ((CheckReturnValueInstruction) instruction).getReturn();
+
+        } else if (instruction instanceof EmptyInstruction) {
+            return ((EmptyInstruction) instruction).getAnchor();
+
+        } else if (instruction instanceof FieldReferenceInstruction) {
+            return ((FieldReferenceInstruction) instruction).getExpression();
+
+        } else if (instruction instanceof MethodCallInstruction) {
+            return ((MethodCallInstruction) instruction).getCallExpression();
+
+        }
+        return null;
     }
 }
