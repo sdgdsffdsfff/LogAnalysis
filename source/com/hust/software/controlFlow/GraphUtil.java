@@ -28,18 +28,39 @@ public class GraphUtil<E> {
     private Set<Node<E>> reachableNodes = new HashSet<>();
 
     public Map<E, Node<E>> getUnreachableNodesMap() {
+        if (nonFeasible()) {
+            return Collections.EMPTY_MAP;
+        }
         anlysisGraph();
         return unreachableNodesMap;
     }
 
     public Map<E, Node<E>> getArticulationNodesMap() {
+        if (nonFeasible()) {
+            return Collections.EMPTY_MAP;
+        }
         anlysisGraph();
         return articulationNodesMap;
     }
 
     public Map<E, Node<E>> getRedundantNodesMap() {
+        if (nonFeasible()) {
+            return Collections.EMPTY_MAP;
+        }
         anlysisGraph();
         return redundantNodesMap;
+    }
+
+    public boolean nonFeasible() {
+        return !isFeasible();
+    }
+
+    public boolean isFeasible() {
+        if (reached == null) {
+            return false;
+        }
+
+        return true;
     }
 
     private void anlysisGraph() {

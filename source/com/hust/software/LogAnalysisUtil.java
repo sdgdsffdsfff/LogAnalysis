@@ -40,7 +40,6 @@ public class LogAnalysisUtil {
 
 
     public static PsiMethodCallExpression findLogWithFault(PsiMethod method) {
-        controlFlow(method);
         PsiMethodCallExpression logErrorCall = findLogErrorMethodCall(method);
         if (logErrorCall == null || !checkLogFault(method, logErrorCall)) {
             return null;
@@ -59,7 +58,17 @@ public class LogAnalysisUtil {
                 || instruction instanceof GotoInstruction);
     }
 
-    public static boolean controlFlow(PsiMethod method) {
+    public static void highlightControlFlowForFile(PsiFile psiFile) {
+        if (!(psiFile instanceof PsiJavaFile)) {
+            return;
+        }
+        PsiJavaFile javaFile = ((PsiJavaFile) psiFile);
+        Collection<PsiMethod> childrenOfType = PsiTreeUtil.findChildrenOfType(javaFile, PsiMethod.class);
+        childrenOfType.stream()
+                .forEach(LogAnalysisUtil::highlightControlFlow);
+    }
+
+    public static boolean highlightControlFlow(PsiMethod method) {
         if (method.getBody() == null) {
             return false;
         }
@@ -87,6 +96,10 @@ public class LogAnalysisUtil {
                 GotoInstruction gotoInstruction = ((GotoInstruction) current);
                 graphUtil.addEdge(current, instructions[gotoInstruction.getOffset()]);
             }
+        }
+
+        if (graphUtil.nonFeasible()) {
+            return false;
         }
 
         List<PsiElement> mustRunCollect = graphUtil.getArticulationNodesMap().keySet()

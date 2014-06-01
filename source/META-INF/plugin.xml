@@ -40,6 +40,13 @@
 
   <application-components>
     <!-- Add your application components here -->
+      <component>
+          <!-- Component's implementation class -->
+          <implementation-class>com.hust.software.action.ActionsPlugin</implementation-class>
+
+          <!-- Component's interface class -->
+          <interface-class>com.hust.software.action.ActionsPlugin</interface-class>
+      </component>
   </application-components>
 
   <project-components>
@@ -48,6 +55,14 @@
 
   <actions>
     <!-- Add your actions here -->
+      <!-- We use "PluginName.ComponentName.ActionName" notation for "id" to avoid conflicts -->
+      <action id="LogAnalysis.ActionsPlugin.HighlightExePathAction"
+              class="com.hust.software.action.HighlightExePathAction"
+              text="Highlight _ExePath" description="Highlight Exe Path">
+          <add-to-group group-id="ToolsMenu" relative-to-action="GenerateJavadoc" anchor="after"/>
+          <keyboard-shortcut first-keystroke="control alt H" second-keystroke="E" keymap="$default"/>
+          <mouse-shortcut keystroke="ctrl alt button2" keymap="$default"/>
+      </action>
   </actions>
 
 </idea-plugin>
