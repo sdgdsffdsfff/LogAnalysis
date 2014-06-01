@@ -7,9 +7,11 @@ import com.intellij.codeInspection.dataFlow.StandardDataFlowRunner;
 import com.intellij.codeInspection.dataFlow.instructions.*;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.diagnostic.Logger;
+import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.colors.EditorColorsManager;
 import com.intellij.openapi.editor.markup.EffectType;
+import com.intellij.openapi.editor.markup.HighlighterLayer;
 import com.intellij.openapi.editor.markup.TextAttributes;
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
@@ -112,8 +114,8 @@ public class LogAnalysisUtil {
                 .map(LogAnalysisUtil::dataFlowInstruction2PsiElement)
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
-        highlightElement(mustRunCollect, JBColor.green);
-        highlightElement(mayRunCollect, JBColor.yellow);
+        highlightLines(mustRunCollect, JBColor.green);
+        highlightLines(mayRunCollect, JBColor.yellow);
 
         if (LOG.isDebugEnabled()) {
             LOG.debug("### Instruction Choose ###");
@@ -296,6 +298,59 @@ public class LogAnalysisUtil {
         return refExpNeedAddList;
     }
 
+    private static void highlightLines(@NotNull List<PsiElement> elementList, Color backgroundColor) {
+        if (elementList.size() == 0) {
+            return;
+        }
+        final PsiElement[] elements = elementList.toArray(new PsiElement[elementList.size()]);
+        final PsiElement element = elements[0];
+
+        Document document = PsiDocumentManager.getInstance(element.getProject()).getDocument(element.getContainingFile());
+
+        final List<Integer> linesNeedHighlight = new ArrayList<>();
+
+        elementList.stream()
+                .forEach(needHighlightElement -> {
+                    int startLineNumber = document.getLineNumber(needHighlightElement.getTextRange().getStartOffset());
+                    int endLineNumber = document.getLineNumber(needHighlightElement.getTextRange().getEndOffset());
+//                    int startOffset = document.getLineStartOffset(lineNumber);
+//                    int endOffset = document.getLineEndOffset(lineNumber);
+                    for (int num = startLineNumber; num <= endLineNumber; num++) {
+                        linesNeedHighlight.add(num);
+                    }
+                });
+
+        ApplicationManager.getApplication().invokeLater(() ->
+                        ApplicationManager.getApplication().runWriteAction(() -> {
+                            final Project project = element.getProject();
+                            final FileEditorManager editorManager =
+                                    FileEditorManager.getInstance(project);
+                            final HighlightManager highlightManager =
+                                    HighlightManager.getInstance(project);
+                            final EditorColorsManager editorColorsManager =
+                                    EditorColorsManager.getInstance();
+                            final Editor editor = editorManager.getSelectedTextEditor();
+
+                            final TextAttributes textattributes =
+                                    new TextAttributes(null, backgroundColor, null, EffectType.LINE_UNDERSCORE, Font.PLAIN);
+
+                            if (editor != null) {
+                                linesNeedHighlight.stream()
+                                        .forEach(lineNum -> {
+                                                    editor.getMarkupModel().addLineHighlighter(lineNum, HighlighterLayer.CARET_ROW, textattributes);
+                                                }
+                                        );
+
+                                final WindowManager windowManager = WindowManager.getInstance();
+                                final StatusBar statusBar = windowManager.getStatusBar(project);
+                                if (statusBar != null) {
+                                    statusBar.setInfo("Press Esc to remove highlighting");
+                                }
+                            }
+
+                        })
+        );
+    }
     private static void highlightElement(@NotNull List<PsiElement> elementList, Color backgroundColor) {
         if (elementList.size() == 0) {
             return;
