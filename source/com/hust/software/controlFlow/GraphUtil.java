@@ -31,7 +31,7 @@ public class GraphUtil<E> {
         if (nonFeasible()) {
             return Collections.EMPTY_MAP;
         }
-        anlysisGraph();
+        analysisGraph();
         return unreachableNodesMap;
     }
 
@@ -39,7 +39,7 @@ public class GraphUtil<E> {
         if (nonFeasible()) {
             return Collections.EMPTY_MAP;
         }
-        anlysisGraph();
+        analysisGraph();
         return articulationNodesMap;
     }
 
@@ -47,7 +47,7 @@ public class GraphUtil<E> {
         if (nonFeasible()) {
             return Collections.EMPTY_MAP;
         }
-        anlysisGraph();
+        analysisGraph();
         return redundantNodesMap;
     }
 
@@ -63,7 +63,7 @@ public class GraphUtil<E> {
         return true;
     }
 
-    private void anlysisGraph() {
+    private void analysisGraph() {
         if (hasAnalysed) {
             return;
         }

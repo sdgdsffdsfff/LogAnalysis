@@ -30,6 +30,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * A tool to help analyse code for log enhance.
@@ -119,6 +120,9 @@ public class LogAnalysisUtil {
 
         if (LOG.isDebugEnabled()) {
             LOG.debug("### Instruction Choose ###");
+            Stream.of(instructions)
+                    .forEach(ins -> LOG.debug(ins.toString()));
+            LOG.debug("------------");
 
             mustRunCollect.stream()
                     .map(Object::toString)
@@ -351,6 +355,7 @@ public class LogAnalysisUtil {
                         })
         );
     }
+
     private static void highlightElement(@NotNull List<PsiElement> elementList, Color backgroundColor) {
         if (elementList.size() == 0) {
             return;

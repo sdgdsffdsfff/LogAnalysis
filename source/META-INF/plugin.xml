@@ -25,13 +25,13 @@
   <idea-version since-build="131"/>
 
   <!-- Resource bundle from which the text of plugin descriptions, action names and etc. will be loaded -->
-  <resource-bundle>logAnalysis</resource-bundle>
+    <!--<resource-bundle>logAnalysis</resource-bundle>-->
 
-  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+    <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
